@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "Olvidar Contraseña";
+    Layout = "_LayoutSGPI";
+}
+
+ <br/>
+ <br/>
+ <style>  
+ #content {
+ align-content: center;
+    font-size: 12px;
+    margin: 30px 15px 0 0;
+ }
+ #button{
+     align-content: center;
+ }
+
+ body {
+        background: #DCDDDF
+    }
+</style>
+<h1 align="center">Recuperación de cuenta</h1>
+ 
+<body>
+    <section id="content">
+<form action="">
+    <div class="form-group">
+            
+        <label for="exampleInputEmail1">Correo Electronico</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa el correo electronico">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Contraseña</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Nueva contraseña">
+        <small id="emailHelp" class="form-text text-muted">Ingresa tu nueva contraseña</small>
+    </div>
+    <button href="/Administrador/Login" type="button" class="btn btn-primary mb-2">Enviar</button>&nbsp;
+    <button href="/Administrador/Login" type="button" class="btn btn-primary mb-2">Volver</button>
+</form>
+</section>
+</body>

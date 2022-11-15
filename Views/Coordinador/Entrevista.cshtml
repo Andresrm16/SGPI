@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Entrevista";
+    Layout = "_LayoutSGPI";
+}
+<style>
+    body {
+        background: #DCDDDF
+    }
+</style>
+<form action="" class="form-inline justify-content-center">
+    <center>
+        <!--menu-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Menú</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Coordinador/BuscarCoordinador">Buscar<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Coordinador/ProgramarAsignatura">Programar Asignatura</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Coordinador/Homologacion">Homologación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Coordinador/Entrevista">Entrevistas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Coordinador/ReportesCoor">Reportes</a>
+                    </li>
+                </ul>
+                <div style="text-align:right">
+                    <a href="/Administrador/Login" id="regresar">Cerrar Sesión</a>
+                </div>
+            </div>
+        </nav>
+        <h1 align="center">Entrevista</h1>
+    </center>
+</form>
+<label>Buscar Usuario</label>
+<div class="input-group">
+    <br />
+    <input type="text" value="1017238577" class="form-control col-sm-3" id="buscarusuariotxt" required />
+    <button type="submit" class="btn btn-primary mb-3">Buscar</button>
+</div>
+<br />
+
+<div>
+    <form action="" class="form-inline justify-content-center">
+    <div class="input-group align-content-center">
+            <label for="fname">Nombre</label><br>
+            <input type="text" id="fname" name="fname" value="Andres"><br>
+            <label for="lname">Apellido</label><br>
+            <input type="text" id="lname" name="lname" value="Ramirez">
+            <label for="lname">Segundo Apellido</label><br>
+            <input type="text" id="sname" name="sname" value="Meneses">
+            <label for="sname">Programa</label><br>
+            <input type="text" id="program" name="program" value="Tecnologia en Sistemas">
+            <label for="program">Documento</label><br>
+            <input type="number" id="num" name="num" value="1000205450">
+      
+    </div>  
+    </form>
+</div>
+
+<br />
+<center>
+    <button type="button" class="btn btn-outline-danger" id="crearbtn type" submit> Ingresar </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <button type="button" class="btn btn-outline-danger" id="crearbtn type" submit> Volver </button>
+</center>

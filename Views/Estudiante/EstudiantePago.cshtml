@@ -1,0 +1,138 @@
+﻿@model SGPI_Andres.Models.Pago
+
+@{
+        ViewData["Title"] = "EstudiantePago";
+    Layout = "_LayoutSGPI";
+
+}
+<form action="" class="form-inline justify-content-center">
+        <!--menu-->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-center">
+        <li class="nav-item">    
+            @Html.ActionLink("Actualizar", "Actualizar", new {IdUsuario = ViewBag.idusario})
+        </li>
+        <li><a></a></li>
+        <li class="nav-item">    
+            @Html.ActionLink("EstudiantePago", "EstudiantePago", new {IdUsuario = ViewBag.idusario})
+        </li>
+                   
+      </nav>
+</form>
+
+
+<form method="post">
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="display-4">Pagos.</h1>
+        </div>
+        <div class="col">
+            <br />
+            <a href="/Administrador/Login"><h4 class="text-right">Cerrar sesión.</h4></a>
+        </div>
+    </div>
+</div>
+
+<section class="text-center">
+    <!-- Background image -->
+    <div class="p-5 bg-image" style="
+        background-image: url('');
+        height: 100px;
+  "></div>
+
+
+    <center><div class="container card mx-4 mx-md-5 shadow-5-strong" style="
+        position: relative;
+        bottom: 25px;
+        background:#343A40;
+        backdrop-filter: blur(30px);
+        ">
+
+
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="form-outline">
+                        <br />
+                        
+                    </div>
+                    <br />
+                </div>
+
+
+
+                <!-- INICIO DE LOS CAMPOS -->
+                <div class="col-md-4 mb-4">
+                    <div class="form-outline">
+                        <br />
+                    </div>
+                    <br />
+                </div>
+                <!-- ACABAN LOS CAMPOS -->
+
+
+
+
+
+                <div class="col-md-4 mb-4">
+                    <div class="form-outline">
+                        <br />
+                    </div>
+                    <br />
+                </div>
+            </div>
+      
+
+        <center>
+            <table class="table table-bordered table-striped" style="background-color:white">
+                
+                <thead>
+                <tr>
+                    <td>Número</td>
+                    <td>Valor pago</td>
+                    <td>Fecha pago</td>
+                    <td>Opciones</td>
+                </tr>
+                </thead>
+                            <td>
+                                <div class="col-md-8 mb-4">
+                                    <input type="text" id="fNumero" class="form-control" />
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="col-md-8 mb-4">
+                                    <input asp-for="ValorPago" type="text" id="formPag" class="form-control" />
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="col-md-8 mb-4">
+                                    <input asp-for="Fecha" type="date" />
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="col-md-8 mb-4">
+                                    <input type="file" id="subirArchivo" />
+                                </div>
+                            </td>
+                </tr>
+            </table>
+
+        </center>
+
+    </div> <br /></center>
+
+               @* <div class="col-md-4 mb-4">
+                    <div class="form-outline">
+                        <label class="form-label text-white" for="certificadotxt">Subir certificado:</label> <br />
+                        <input class="text-white" type="file" id="certificadotxt" required />
+                    </div>
+                    <br />
+                </div>
+*@
+    <button class="btn btn-lg px-5 text-white" type="submit" style="background-color:#343A40">Pagar</button>
+
+</section>
+</form>

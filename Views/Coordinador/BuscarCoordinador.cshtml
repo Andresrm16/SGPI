@@ -1,0 +1,114 @@
+﻿
+@{
+    ViewData["Title"] = "BuscarCoordinador";
+    Layout = "_LayoutSGPI";
+}
+<style>
+    body {
+        background: #DCDDDF
+    }
+</style>
+<form action="" class="form-inline justify-content-center">
+    <center>
+            <!--menu-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Menú</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Coordinador/BuscarCoordinador">Buscar<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Coordinador/ProgramarAsignatura">Programar Asignatura</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Coordinador/Homologacion">Homologación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Coordinador/Entrevista">Entrevistas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Coordinador/ReportesCoor">Reportes</a>
+                    </li>
+                </ul>
+                <div style="text-align:right">
+                        <a href="/Administrador/Login" id="regresar">Cerrar Sesión</a>
+                    </div>
+            </div>
+        </nav>
+        <h1 align="center">Buscar Coordinador</h1>
+    </center>
+</form>
+
+<label>Buscar Coordinador</label>
+<div class="input-group">
+    <br/>
+    <input type="text" placeholder="Ingrese el documento de identidad" class="form-control col-sm-3" id="buscarusuariotxt" required />
+    <button type="submit" class="btn btn-primary mb-3">Buscar</button>
+</div>
+
+<br />
+
+<form action="" class="form-inline justify-content-center">
+    <center>
+        <table class="default text-center" border="1">
+
+            <tr>
+                <th>Nombre</th> 
+                <th>Primer Apellido</th> 
+                <th>Segundo Apellido</th> 
+                <th>Genero</th> 
+                <th>Documento</th> 
+                <th>Programa</th> 
+                <th>Rol</th> 
+                <th>Correo Electronico</th> 
+            </tr>
+
+            <tr>
+
+                <td>Andres</td>
+                <td>Ramirez</td>
+                <td>Meneses</td>
+                <td>Masculino</td>
+                <td>1000.205.450</td>
+                <td>Tecnologia en Sistemas</td>
+                <td>Administrador</td>
+                <td>yeison.ramirez90@correo.edu.co</td>
+
+            </tr>
+            <br />
+            <tr>
+
+                <td> <br /></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+            <tr>
+                <td> <br /></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+        </table>
+    </center>
+    <br />
+    <br />
+</form>
+
+

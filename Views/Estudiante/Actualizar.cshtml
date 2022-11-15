@@ -1,0 +1,145 @@
+﻿@model SGPI_Andres.Models.Usuario
+
+
+@{
+        ViewData["Title"] = "Actualizar";
+    Layout = "_LayoutSGPI";
+}
+<div class="container">
+   <form action="" class="form-inline justify-content-center">
+        <!--menu-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Menú</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Estudiante/Actualizar">Actualizar estudiante </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Estudiante/EstudiantePago">Pago del Estudiante </a>
+                    </li> 
+                    </ul> 
+            </div>
+                   
+      </nav>
+</form>
+
+    <div class="row">
+        <div class="col">
+            <h1 class="display-4">Actualizar.</h1>
+        </div>
+        <div class="col">
+            <br />
+            <a href="/Administrador/Login"><h4 class="text-right">Cerrar sesión.</h4></a>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background: #DCDDDF
+    }
+</style>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="form-outline">
+                        <label class="form-label text-white" for="selectdocumento">Tipo de documento:</label> <br />
+                         @Html.DropDownList("IdDoc", new SelectList(ViewBag.documento, "IdDoc", "TipoDocumento"), new{@class="form-control dropdown"})
+                    </div>
+                    <br />
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="form-outline">
+                        <label class="form-label text-white" for="documentotxt">Número de documento</label> <br />
+                        <input asp-for="NumeroDocumento" type="text" id="documentotxt" class="form-control" required />
+                    </div>
+                    <br />
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="form-outline">
+                        <label class="form-label text-white" for="selectsexo">Seleccione su sexo:</label> <br />
+                        @Html.DropDownList("IdGenero", new SelectList(ViewBag.genero, "IdGenero", "Genero1"), new{@class="form-control dropdown"})
+                    </div>
+                    <br />
+                </div>
+            </div>
+
+        <form>
+
+
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="form-outline">
+                        <label class="form-label text-white" for="nombretxt">Primer Nombre:</label> <br />
+                        <input asp-for="PrimerNombre" type="text" id="nombretxt" class="form-control" />
+                    </div>
+                    <br />
+                </div>
+
+                  <div class="col-md-4 mb-4">
+                    <div class="form-outline">
+                        <label class="form-label text-white" for="nombretxt">Segundo Nombre:</label> <br />
+                        <input asp-for="SegundoNombre" type="text" id="nombretxt" class="form-control" />
+                    </div>
+                    <br />
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="form-outline">
+                        <label class="form-label text-white" for="primerapellidotxt">Primer Apellido:</label> <br />
+                        <input asp-for="PrimerApellido" type="text" id="primerapellidotxt" class="form-control" />
+                    </div>
+                    <br />
+                </div>
+  
+                <div class="col-md-4 mb-4">
+                    <div class="form-outline">
+                        <label class="form-label text-white" for="segundoapellidotxt">Segundo Apellido:</label> <br />
+                        <input asp-for="SegundoApellido" type="text" id="segundoapellidotxt" class="form-control" />
+                    </div>
+                    <br />
+                </div>
+            </div>
+        </form>
+
+
+        <form>
+
+            <div class="row">
+                 <div class="col-md-4 mb-4">
+                    <div class="form-outline">
+                         <label>Contraseña</label>
+                        <br />
+                        <input asp-for="Password" type="password" class="form-control col-sm-12" id="passwordtxt" required />
+                        <br />
+                    </div>
+                 </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="form-outline">
+                        <label class="form-label text-white" for="emailtxt">Correo electrónico:</label> <br />
+                        <input asp-for="Email" type="email" id="emailtxt" class="form-control" />
+                    </div>
+                    <br />
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="form-outline">
+                        <label class="form-label text-white" for="selectprograma">Programa:</label> <br />
+                        @Html.DropDownList("IdPrograma", new SelectList(ViewBag.programa, "IdPrograma", "Programa1"), new{@class="form-control dropdown"})
+                    </div>
+                    <br />
+                </div>
+
+
+                <button type="submit" class="btn btn-outline-primary" id="crearbtn">Actualizar Estudiante</button>
+
+            </div>
+        </form>
